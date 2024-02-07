@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800&family=Nova+Square&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+:root {
+  font-family: 'Poppins', sans-serif;
+  height: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+.text-shadow{
+  text-shadow: 2px 3px 3px rgb(77, 77, 77);
+}
+
+.font-f-cairo{
+  font-family: 'cairo', sans-serif;
+}
+
+@layer utilities {
+  .btn_white-green { 
+    @apply  border-green-50 bg-white px-8 py-3 text-green-500
+  }
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
